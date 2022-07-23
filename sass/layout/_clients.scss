@@ -1,0 +1,43 @@
+/* clients */
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-item {
+    width: 170px;
+    height: 92px;
+}
+
+.client-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $fill-grey;
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: $trans-duration;
+    transition-timing-function: $timing-function;
+}
+
+.client-link:hover,
+.client-link:focus {
+    border-color: $color-axcent;
+}
+
+.client-icon {
+    width: 106px;
+    height: 60px;
+    fill: $fill-grey;
+    transition-property: fill;
+    transition-duration: $trans-duration;
+    transition-timing-function: $timing-function;
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+    fill: $color-axcent;
+}
