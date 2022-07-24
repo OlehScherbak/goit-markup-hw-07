@@ -21,29 +21,36 @@
     <header>
       <div class="container header">
         <nav class="header-nav">
-          <a class="nav-logo" href="./index.html"><span class="axcent">Web</span>Studio</a>
+          <a class="logo header__logo" href="./index.html"
+            ><span class="logo__span">Web</span>Studio</a
+          >
 
-          <ul class="nav-list">
-            <li class="item"><a class="nav-link" href="./index.html">Студія</a></li>
-            <li class="item">
-              <a class="nav-link current-page" href="./portfolio.html">Портфоліо</a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-link" href="./index.html">Студія</a>
             </li>
-            <li class="item"><a class="nav-link" href="#">Контакти</a></li>
+            <li class="header-nav__item">
+              <a class="header-link header-link--current-page" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-nav__item"><a class="header-link" href="#">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="header-contact-list">
-          <li class="item">
-            <a class="nav-link contact-link" href="mailto:info@devstudio.com">
-              <svg class="contact-link-icon" aria-hidden="true">
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-link header-link__header-contacts" href="mailto:info@devstudio.com">
+              <svg class="header-contacts__icon" aria-hidden="true">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="nav-link contact-link" href="tel:+380961111111">
-              <svg class="contact-link-icon smartfone" aria-hidden="true">
+          <li class="header-contacts__item">
+            <a class="header-link header-link__header-contacts" href="tel:+380961111111">
+              <svg
+                class="header-contacts__icon header-contacts__icon--smartfone"
+                aria-hidden="true"
+              >
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -59,203 +66,203 @@
         <div class="container">
           <h1 class="visually-hidden">Галерея проектів</h1>
 
-          <ul class="button-list">
-            <li class="button-list-item">
-              <button class="button start" type="button">Все</button>
+          <ul class="btn-grid">
+            <li class="btn-grid__item">
+              <button class="btn btn__start" type="button">Все</button>
             </li>
-            <li class="button-list-item">
-              <button type="button" class="button">Веб-сайти</button>
+            <li class="btn-grid__item">
+              <button type="button" class="btn">Веб-сайти</button>
             </li>
-            <li class="button-list-item">
-              <button type="button" class="button">Додатки</button>
+            <li class="btn-grid__item">
+              <button type="button" class="btn">Додатки</button>
             </li>
-            <li class="button-list-item"><button type="button" class="button">Дизайн</button></li>
-            <li class="button-list-item">
-              <button type="button" class="button">Маркетинг</button>
+            <li class="btn-grid__item"><button type="button" class="btn">Дизайн</button></li>
+            <li class="btn-grid__item">
+              <button type="button" class="btn">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="cases-list">
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+          <ul class="cases-grid">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img
                     src="./images/cases/case-1.jpg"
                     alt="сторінка веб-сайту на екрані ноутбука"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Технокряк</h2>
-                <p class="case-text">Веб-сайт</p>
+                <h2 class="case__title">Технокряк</h2>
+                <p class="case__category">Веб-сайт</p>
               </a>
             </li>
 
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img
                     src="./images/cases/case-2.jpg"
                     alt="два спортсмени грають в баскетбол"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Постер New Orlean vs Golden Star</h2>
-                <p class="case-text">Дизайн</p>
+                <h2 class="case__title">Постер New Orlean vs Golden Star</h2>
+                <p class="case__category">Дизайн</p>
               </a>
             </li>
 
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img
                     src="./images/cases/case-3.jpg"
                     alt="емблема морського ресторану"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Ресторан Seafood</h2>
-                <p class="case-text">Додаток</p>
+                <h2 class="case__title">Ресторан Seafood</h2>
+                <p class="case__category">Додаток</p>
               </a>
             </li>
 
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img src="./images/cases/case-4.jpg" alt="навушники" width="370" height="294" />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Проєкт Prime</h2>
-                <p class="case-text">Маркетинг</p>
+                <h2 class="case__title">Проєкт Prime</h2>
+                <p class="case__category">Маркетинг</p>
               </a>
             </li>
 
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img src="./images/cases/case-5.jpg" alt="дві коробки" width="370" height="294" />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Проєкт Boxes</h2>
-                <p class="case-text">Додаток</p>
+                <h2 class="case__title">Проєкт Boxes</h2>
+                <p class="case__category">Додаток</p>
               </a>
             </li>
 
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img
                     src="./images/cases/case-6.jpg"
                     alt="сторінка веб-сайту на екрані монітору"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Inspiration has no Borders</h2>
-                <p class="case-text">Веб-сайт</p>
+                <h2 class="case__title">Inspiration has no Borders</h2>
+                <p class="case__category">Веб-сайт</p>
               </a>
             </li>
 
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img
                     src="./images/cases/case-7.jpg"
                     alt="розгорнутий журнал"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Видання Limited Edition</h2>
-                <p class="case-text">Дизайн</p>
+                <h2 class="case__title">Видання Limited Edition</h2>
+                <p class="case__category">Дизайн</p>
               </a>
             </li>
 
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img src="./images/cases/case-8.jpg" alt="ярлик" width="370" height="294" />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Проєкт LAB</h2>
-                <p class="case-text">Маркетинг</p>
+                <h2 class="case__title">Проєкт LAB</h2>
+                <p class="case__category">Маркетинг</p>
               </a>
             </li>
 
-            <li class="case-item">
-              <a href="#" class="case-link">
-                <div class="card-thumb">
+            <li class="cases-grid__item">
+              <a href="#" class="case__link">
+                <div class="case__thumb">
                   <img
                     src="./images/cases/case-9.jpg"
                     alt="сторінка веб-сайту на екрані ноутбуку"
                     width="370"
                     height="294"
                   />
-                  <div class="card-description">
-                    <p class="card-description-text">
+                  <div class="case__description">
+                    <p class="case__description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <h2 class="case-title">Growing Business</h2>
-                <p class="case-text">Додаток</p>
+                <h2 class="case__title">Growing Business</h2>
+                <p class="case__category">Додаток</p>
               </a>
             </li>
           </ul>
@@ -265,14 +272,16 @@
 
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="address-container">
-          <a class="footer-logo" href="./index.html"><span class="axcent">Web</span>Studio</a>
+        <div class="footer-contacts__wrapper">
+          <a class="logo footer__logo" href="./index.html"
+            ><span class="logo__span">Web</span>Studio</a
+          >
 
-          <address class="address">
-            <ul class="footer-address-list">
-              <li class="footer-address-item">
+          <address class="footer-contacts">
+            <ul class="footer-contacts__list">
+              <li>
                 <a
-                  class="footer-address-link"
+                  class="footer-contacts__link--address"
                   href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
@@ -280,47 +289,47 @@
                 >
               </li>
 
-              <li class="footer-contact-item">
-                <a class="footer-contact-link" href="mailto:info@example.com">info@example.com</a>
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="mailto:info@example.com">info@example.com</a>
               </li>
 
-              <li class="footer-contact-item">
-                <a class="footer-contact-link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
         <div>
-          <p class="socials-text">приєднуйтесь</p>
-          <ul class="social-list">
-            <li class="social-link-item">
-              <a href="#" class="social-link footer-socials">
-                <svg class="social-icon" aria-label="instagram">
+          <p class="socials__text">приєднуйтесь</p>
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--footer">
+                <svg class="socials__icon socials__icon--footer" aria-label="instagram">
                   <use href="./images/icons.svg#icon-1-instagram"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-link-item">
-              <a href="#" class="social-link footer-socials">
-                <svg class="social-icon" aria-label="twitter">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--footer">
+                <svg class="socials__icon socials__icon--footer" aria-label="twitter">
                   <use href="./images/icons.svg#icon-2-twitter"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-link-item">
-              <a href="#" class="social-link footer-socials">
-                <svg class="social-icon" aria-label="facebook">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--footer">
+                <svg class="socials__icon socials__icon--footer" aria-label="facebook">
                   <use href="./images/icons.svg#icon-3-facebook"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-link-item">
-              <a href="#" class="social-link footer-socials">
-                <svg class="social-icon" aria-label="linkedin">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--footer">
+                <svg class="socials__icon socials__icon--footer" aria-label="linkedin">
                   <use href="./images/icons.svg#icon-4-linkedin"></use>
                 </svg>
               </a>
@@ -328,14 +337,14 @@
           </ul>
         </div>
 
-        <form name="signup" class="signup-form">
-          <p class="form-caption">Підпишіться на розсилку</p>
+        <form name="signup-form" class="signup-form">
+          <p class="signup-form__caption">Підпишіться на розсилку</p>
           <label>
-            <input class="input-email" type="email" name="email" placeholder="E-mail" />
+            <input class="signup-form__input" type="email" name="email" placeholder="E-mail" />
           </label>
-          <button class="signup-button" type="submit">
+          <button class="signup-form__button" type="submit">
             Підписатися
-            <svg class="signup-button-svg" width="24" height="24">
+            <svg class="signup-form__button-svg" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>

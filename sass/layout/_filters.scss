@@ -1,5 +1,9 @@
-/* filters */
-.button {
+/*
+    filters (btn)
+    block
+*/
+
+.btn {
     border-radius: 4px;
     background-color: $background-color-secondary;
     font-weight: 500;
@@ -11,27 +15,36 @@
     padding: 6px 22px;
     transition: color $trans-duration $timing-function,
         background-color $trans-duration $timing-function, box-shadow $trans-duration $timing-function;
+
+    &__start {
+        color: $text-white;
+        background-color: $color-axcent;
+    }
+
+    &:hover,
+    &:focus {
+        color: $text-white;
+        background-color: $color-axcent;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
-.button.start {
-    color: $text-white;
-    background-color: $color-axcent;
-}
 
-.button:hover,
-.button:focus {
-    color: $text-white;
-    background-color: $color-axcent;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
-.button-list {
+
+
+/*
+    filters (btn-grid)
+    block
+*/
+
+.btn-grid {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-}
-
-.button-list-item:not(:last-child) {
-    margin-right: 8px;
+    
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
 }

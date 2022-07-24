@@ -1,82 +1,50 @@
-/* team */
+/*
+    team
+    block
+*/
 
 .team {
     background-color: $background-color-secondary;
+
+    &__member-name {
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__member-position {
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $text-grey;
+        margin-bottom: 16px;
+    }
 }
 
-.team-list {
+
+
+/*
+    team-grid
+    block
+*/
+
+.team-grid {
     display: flex;
+
+    &__item {
+        background-color: $background-color-primary;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.team-item {
-    background-color: $background-color-primary;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
 
-.team-item:not(:last-child) {
-    margin-right: 30px;
-}
 
-.team-item-header {
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding-top: 30px;
-    margin-bottom: 10px;
-}
 
-.team-item-text {
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: $text-grey;
-    margin-bottom: 16px;
-}
 
-.social-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px;
-}
-
-.social-link-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.social-link-item {
-    width: 44px;
-    height: 44px;
-}
-
-.social-link {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: $trans-duration;
-    transition-timing-function: $timing-function;
-}
-
-.social-link:hover,
-.social-link:focus {
-    background-color: $color-axcent;
-}
-
-.social-icon {
-    width: 44px;
-    height: 44px;
-    fill: $fill-grey;
-    transition-property: fill;
-    transition-duration: $trans-duration;
-    transition-timing-function: $timing-function;
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-    fill: $background-color-primary;
-}

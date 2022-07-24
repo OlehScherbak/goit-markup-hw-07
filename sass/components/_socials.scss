@@ -1,0 +1,70 @@
+/* socials component */
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    
+    &__text {
+        text-transform: uppercase;
+        color: $text-white;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    }
+    
+    &__item {
+        width: 44px;
+        height: 44px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: inherit;
+        transition-property: background-color;
+        transition-duration: $trans-duration;
+        transition-timing-function: $timing-function;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: $color-axcent;
+    }
+        
+    &__icon {
+        width: 44px;
+        height: 44px;
+        @include social_icon_inactive($fill-grey);
+        // fill: $fill-grey;
+        transition-property: fill;
+        transition-duration: $trans-duration;
+        transition-timing-function: $timing-function;
+    }
+
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+        fill: $background-color-primary;
+    }
+}
+
+.socials__link--footer {
+    @include social_link_inactive_bgc(rgba(255, 255, 255, 0.1));
+}
+
+.socials__icon--footer {
+    @include social_icon_inactive($background-color-primary);
+}
+
+
+
