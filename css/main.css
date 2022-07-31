@@ -389,8 +389,7 @@ body {
   border-radius: 4px;
   background-color: #ffffff;
 }
-
-.button-modal-close {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -399,22 +398,19 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   background-color: transparent;
+  cursor: pointer;
 }
-
-.button-close-icon {
+.modal__button-close-icon {
   fill: #000000;
 }
-
-.button-modal-close:hover .button-close-icon,
-.button-modal-close:focus .button-close-icon {
+.modal__button-close:hover .modal__button-close-icon, .modal__button-close:focus .modal__button-close-icon {
   fill: #2196f3;
 }
 
 .callback-form {
   padding: 40px 39px 40px 41px;
 }
-
-.callback-form-title {
+.callback-form__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -422,21 +418,18 @@ body {
   text-align: center;
   margin-bottom: 12px;
 }
-
-.form-input-label {
+.callback-form__input-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
   letter-spacing: 0.01em;
   color: #757575;
 }
-
-.input-wrapper {
+.callback-form__input-wrapper {
   position: relative;
   margin-bottom: 10px;
 }
-
-.form-input {
+.callback-form__input {
   display: block;
   height: 40px;
   width: 100%;
@@ -446,17 +439,14 @@ body {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form-input:focus {
+.callback-form__input:focus {
   border: 1px solid rgb(33, 150, 243);
   outline: 0;
 }
-
-.form-input:focus + .input-icon {
+.callback-form__input:focus + .callback-form__input-icon {
   fill: #2196f3;
 }
-
-.textarea-comment {
+.callback-form__input--textarea-comment {
   height: 120px;
   width: 100%;
   resize: none;
@@ -465,8 +455,7 @@ body {
   letter-spacing: 0.01em;
   margin-bottom: 20px;
 }
-
-.input-icon {
+.callback-form__input-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -477,8 +466,7 @@ body {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.input-checkbox {
+.callback-form__input-checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -491,8 +479,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.user-consent-label {
+.callback-form__user-consent-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,8 +494,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-.icon-check {
+.callback-form__icon-check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -519,19 +505,16 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.input-checkbox:checked + .icon-check {
+.callback-form__input-checkbox:checked + .callback-form__icon-check {
   background-color: #2196f3;
   fill: #ffffff;
   border: 0px;
 }
-
-.agreement-link {
+.callback-form__agreement-link {
   text-decoration: underline;
   color: #2196f3;
 }
-
-.callback-submit-button {
+.callback-form__button-submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -546,12 +529,11 @@ body {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.callback-submit-button:hover,
-.callback-submit-button:focus {
+.callback-form__button-submit:hover, .callback-form__button-submit:focus {
   background: #188ce8;
 }
 

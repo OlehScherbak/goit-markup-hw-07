@@ -482,57 +482,57 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-modal-close" type="button" data-modal-close>
-          <svg class="button-close-icon" width="11" height="11">
+        <button class="modal__button-close" type="button" data-modal-close>
+          <svg class="modal__button-close-icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
         <form class="callback-form">
-          <h2 class="callback-form-title">Залиште свої дані, ми вам зателефонуємо</h2>
+          <h2 class="callback-form__title">Залиште свої дані, ми вам зателефонуємо</h2>
 
-          <label class="form-input-label" for="name">Ім'я</label>
-          <div class="input-wrapper">
-            <input class="form-input" type="text" name="name" id="name" />
-            <svg class="input-icon" aria-hidden="true">
+          <label class="callback-form__input-label" for="name">Ім'я</label>
+          <div class="callback-form__input-wrapper">
+            <input class="callback-form__input" type="text" name="name" id="name" />
+            <svg class="callback-form__input-icon" aria-hidden="true">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
 
-          <label class="form-input-label" for="tel">Телефон</label>
-          <div class="input-wrapper">
-            <input class="form-input" type="tel" name="tel" id="tel" />
-            <svg class="input-icon" aria-hidden="true">
+          <label class="callback-form__input-label" for="tel">Телефон</label>
+          <div class="callback-form__input-wrapper">
+            <input class="callback-form__input" type="tel" name="tel" id="tel" />
+            <svg class="callback-form__input-icon" aria-hidden="true">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
 
-          <label class="form-input-label" for="email">Пошта</label>
-          <div class="input-wrapper">
-            <input class="form-input" type="email" name="email" id="email" />
-            <svg class="input-icon" aria-hidden="true">
+          <label class="callback-form__input-label" for="email">Пошта</label>
+          <div class="callback-form__input-wrapper">
+            <input class="callback-form__input" type="email" name="email" id="email" />
+            <svg class="callback-form__input-icon" aria-hidden="true">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
 
-          <label class="form-input-label" for="comment">Коментар</label>
+          <label class="callback-form__input-label" for="comment">Коментар</label>
           <textarea
-            class="form-input textarea-comment"
+            class="callback-form__input callback-form__input--textarea-comment"
             name="comment"
             id="comment"
             placeholder="Введіть текст"
           ></textarea>
 
-          <label class="user-consent-label">
-            <input class="input-checkbox" type="checkbox" name="user-consent" />
-            <svg class="icon-check">
+          <label class="callback-form__user-consent-label">
+            <input class="callback-form__input-checkbox" type="checkbox" name="user-consent" />
+            <svg class="callback-form__icon-check">
               <use href="./images/icons.svg#icon-check"></use>
             </svg>
             <span>Погоджуюся з розсилкою та приймаю &#160;</span>
-            <a class="agreement-link" href="">Умови договору</a>
+            <a class="callback-form__agreement-link" href="">Умови договору</a>
           </label>
 
-          <button type="submit" class="callback-submit-button">Відправити</button>
+          <button type="submit" class="callback-form__button-submit">Відправити</button>
         </form>
       </div>
     </div>

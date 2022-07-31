@@ -30,156 +30,159 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     background-color: $background-color-primary;
+    
+    &__button-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    &__button-close-icon {
+        fill: $text-black;
+    }
+    
+    &__button-close:hover &__button-close-icon,
+    &__button-close:focus &__button-close-icon {
+        fill: $color-axcent;
+    }
 }
 
-.button-modal-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    background-color: transparent;
-}
-
-.button-close-icon {
-    fill: $text-black;
-}
-
-.button-modal-close:hover .button-close-icon,
-.button-modal-close:focus .button-close-icon {
-    fill: $color-axcent;
-}
 
 .callback-form {
     padding: 40px 39px 40px 41px;
-}
-
-.callback-form-title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.form-input-label {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    color: $text-grey;
-}
-
-.input-wrapper {
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.form-input {
-    display: block;
-    height: 40px;
-    width: 100%;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding-left: 42px;
-    transition: border-color $trans-duration $timing-function;
-}
-
-.form-input:focus {
-    border: 1px solid rgba(33, 150, 243, 1);
-    outline: 0;
-}
-
-.form-input:focus+.input-icon {
-    fill: $color-axcent;
-}
-
-.textarea-comment {
-    height: 120px;
-    width: 100%;
-    resize: none;
-    padding: 12px 16px;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    margin-bottom: 20px;
-}
-
-.input-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    width: 18px;
-    height: 18px;
-    transform: translateY(-50%);
-    transition: fill $trans-duration $timing-function;
-}
-
-.input-checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.user-consent-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
-
-.icon-check {
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    margin-right: 7px;
-    border-radius: 2px;
-    border: 2px solid $main-text-color;
-    fill: transparent;
-    transition: background-color $trans-duration $timing-function;
-}
-
-.input-checkbox:checked+.icon-check {
-    background-color: $color-axcent;
-    fill: $text-white;
-    border: 0px;
-}
-
-.agreement-link {
-    text-decoration: underline;
-    color: $color-axcent;
-}
-
-.callback-submit-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 50px;
-    background: $color-axcent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border-width: 0;
-    color: $text-white;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    transition: background-color $trans-duration $timing-function;
-}
-
-.callback-submit-button:hover,
-.callback-submit-button:focus {
-    background: $color-axcent-dark;
+    
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    
+    &__input-label {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: $text-grey;
+    }
+    
+    &__input-wrapper {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    &__input {
+        display: block;
+        height: 40px;
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding-left: 42px;
+        transition: border-color $trans-duration $timing-function;
+    }
+    
+    &__input:focus {
+        border: 1px solid rgba(33, 150, 243, 1);
+        outline: 0;
+    }
+    
+    &__input:focus+&__input-icon {
+        fill: $color-axcent;
+    }
+    
+    &__input--textarea-comment {
+        height: 120px;
+        width: 100%;
+        resize: none;
+        padding: 12px 16px;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        margin-bottom: 20px;
+    }
+    
+    &__input-icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+        transform: translateY(-50%);
+        transition: fill $trans-duration $timing-function;
+    }
+    
+    &__input-checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    
+    &__user-consent-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+    
+    &__icon-check {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        margin-right: 7px;
+        border-radius: 2px;
+        border: 2px solid $main-text-color;
+        fill: transparent;
+        transition: background-color $trans-duration $timing-function;
+    }
+    
+    &__input-checkbox:checked+&__icon-check {
+        background-color: $color-axcent;
+        fill: $text-white;
+        border: 0px;
+    }
+    
+    &__agreement-link {
+        text-decoration: underline;
+        color: $color-axcent;
+    }
+    
+    &__button-submit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 50px;
+        background: $color-axcent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-width: 0;
+        color: $text-white;
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        transition: background-color $trans-duration $timing-function;
+    }
+    
+    &__button-submit:hover,
+    &__button-submit:focus {
+        background: $color-axcent-dark;
+    }
 }
